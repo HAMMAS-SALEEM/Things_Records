@@ -56,7 +56,7 @@ rubocop --auto-correct-all | rubocop -A
 
 - GitHub: [@farouqdaif1](https://github.com/farouqdaif1)
 - Twitter: [@farouqdaif](https://twitter.com/DaifFarouq)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/farouqdaif
+- LinkedIn: [Farouq Daif](https://www.linkedin.com/in/farouqdaif)
 
 👤 **Lichapa Mphatso**
 
