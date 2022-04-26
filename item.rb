@@ -7,7 +7,7 @@ class Item
     @archived = archived
   end
 
-  def move_to_archivd
+  def move_to_archive
     @archived = true if can_be_archived?
   end
 
