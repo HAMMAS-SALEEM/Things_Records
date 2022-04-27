@@ -31,6 +31,7 @@ class Main
     end
   end
 
+  # rubocop:disable Metrics/MethodLength
   def user_input(input)
     case input
     when 1

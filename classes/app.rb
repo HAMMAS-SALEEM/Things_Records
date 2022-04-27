@@ -7,7 +7,7 @@ class App
 
   def add_a_music_album(music_albums, genres)
     puts 'Add a music album'
-    print "Enter music albums name: "
+    print 'Enter music albums name: '
     name = gets.chomp
     print 'Enter albums published date: '
     publish_date = gets.chomp
@@ -16,28 +16,25 @@ class App
     print 'Add genre: '
     genre = genre_input(genres)
     archived = false
-    album = MusicAlbum.new( publish_date, archived, name, on_spotify, genre)
+    album = MusicAlbum.new(publish_date, archived, name, on_spotify, genre)
     music_albums.push(album)
-    album_data = { id: album.id,  publish_date: publish_date, archived: false,
-                    name: name, on_spotify: on_spotify, genre: genre, }
+    album_data = { id: album.id, publish_date: publish_date, archived: false,
+                   name: name, on_spotify: on_spotify, genre: genre }
     update_data('music', album_data)
     puts "#{name} Album added successfully"
     add_genre(genre, genres)
   end
 
   def genre_input(genres)
-    genre = ' '
     if genres.empty?
       puts 'No Genres have been added yet'
       print 'enter a Genre name:'
-      genre = gets.chomp.downcase
     else
       puts 'Select genre for the list.'
       genres.each_with_index { |genre, index| puts "#{index} Name: #{genre.name}" }
       print 'Enter name of genre or Enter a new Genre: '
-      genre = gets.chomp.downcase
     end
-    genre
+    gets.chomp.downcase
   end
 
   def add_genre(genre, genres)
@@ -54,12 +51,12 @@ class App
     puts
     puts 'No music albums have been added yet.' if music_albums.empty?
     music_albums.each do |album|
-      puts "Publish date: #{album.publish_date}"      
-      puts "Music Album name: #{album.name}"      
+      puts "Publish date: #{album.publish_date}"
+      puts "Music Album name: #{album.name}"
       puts "On spotify: #{album.on_spotify}"
       puts "Music Genre: #{album.genre}"
       puts
-    end    
+    end
   end
 
   def list_all_genres(genres)

@@ -27,12 +27,12 @@ module ProcessData
     fetch_data('music').map do |album|
       MusicAlbum.new(album['publish_date'], album['archived'], album['name'], album['on_spotify'],
                      album['genre'])
-    end    
+    end
   end
 
   def load_genre
     fetch_data('genre').map do |genre|
       Genre.new(genre['name'])
-    end 
+    end
   end
 end
