@@ -31,25 +31,12 @@ class Main
     end
   end
 
-  # rubocop:disable Metrics/MethodLength
   def user_input(input)
     case input
-    when 1
-      App.list_all_book
     when 2
       App.new.list_all_music_albums(@music_albums)
-    when 3
-      App.list_all_games
     when 4
       App.new.list_all_genres(@genres)
-    when 5
-      App.list_all_labels
-    when 6
-      App.list_all_authors
-    when 7
-      App.list_all_sources
-    when 8
-      App.add_a_book
     when 9
       p 'You chose to add album'
       App.new.add_a_music_album(@music_albums, @genres)

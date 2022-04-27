@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id" : 974,
+    "publish_date" : "2000-10-05",
+    "archived" : false,
+    "name" : "Malawi",
+    "on_spotify" : false,
+    "genre" : "regea"
+  },
+  {
+    "id" : 827,
+    "publish_date" : "2001-01-01",
+    "archived" : false,
+    "name" : "Mesmerize",
+    "on_spotify" : true,
+    "genre" : "hiphop"
+  }
+]
