@@ -10,9 +10,7 @@ describe Game do
       expect(game.multiplayer).to eq 'yes'
     end
     it 'Return correct last_played_at' do
-      x = { mday: 16, mon: 6, year: 2000 }
-      y = game.last_played_at
-      expect(y).to eq x
+      expect(game.last_played_at).to eq '2000-06-16'
     end
   end
 end
