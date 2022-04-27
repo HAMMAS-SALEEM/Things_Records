@@ -89,3 +89,11 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+
+require "./classes/item"
+require "./classes/label"
+require "./classes/book"
+i = Item.new("2022-02-01", true)
+lab = Label.new('Working', 'red')
+lab.add_item(i)
