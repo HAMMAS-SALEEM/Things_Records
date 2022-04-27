@@ -1,4 +1,3 @@
-require_relative '../classes/game'
 require_relative '../store_data/game_store'
 module AppGame
   include GameStore

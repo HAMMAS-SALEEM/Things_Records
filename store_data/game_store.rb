@@ -1,4 +1,5 @@
 require 'json'
+require_relative '../classes/game'
 module GameStore
   def write_game(multiplayer, last, date)
     data = []

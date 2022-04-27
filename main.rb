@@ -1,7 +1,8 @@
 require './app_functionality/app_game'
-
+require './app_functionality/app_author'
 class Main
   include AppGame
+  include AppAuthor
   def start
     puts " Welcome the Things Records App
     1  - List all books
@@ -26,6 +27,8 @@ class Main
       list_all_author
     when 10
       add_game
+    when 12
+      add_author
     end
   end
 end
