@@ -9,7 +9,7 @@ class Main
   end
 
   def start
-    puts 'Welcome the Things Records App'
+    puts 'Welcome to the Things Records App'
     input = 0
     until input == 11
       puts "Choose from the following Options
