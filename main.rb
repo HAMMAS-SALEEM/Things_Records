@@ -1,8 +1,14 @@
 require './app_functionality/app_game'
 require './app_functionality/app_author'
+require './app_functionality/app_book'
+require './app_functionality/app_label'
+
 class Main
   include AppGame
   include AppAuthor
+  include AppBook
+  include AppLabel
+
   def start
     puts " Welcome the Things Records App
     1  - List all books
@@ -22,10 +28,16 @@ class Main
 
   def select(num)
     case num
+    when 1
+      list_all_books
     when 3
       list_all_games
+    when 5
+      list_all_labels
     when 6
       list_all_author
+    when 8
+      add_book
     when 10
       add_game
     when 11
@@ -35,6 +47,7 @@ class Main
     end
   end
 end
+
 loop do
   app = Main.new
   app.start
