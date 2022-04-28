@@ -20,6 +20,6 @@ class Item
   private
 
   def can_be_archived?
-    return true if Time.new.year - published_date > 10
+    true if Time.new.year - @published_date.year > 10
   end
 end

@@ -10,11 +10,8 @@ module AppAuthor
   end
 
   def add_author
-    print('First Name:')
-    first_name = gets.chomp.capitalize
-    print('Last Name: ')
-    last_name = gets.chomp.capitalize
-    write_author(first_name, last_name)
+    input = inp(['First Name', 'Last Name'])
+    write_author(input[0], input[1])
     puts('Author created Successfully')
   end
 end

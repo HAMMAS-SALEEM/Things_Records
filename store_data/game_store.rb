@@ -13,7 +13,13 @@ module GameStore
                  publish_date: one_game.publish_date }
              end
            end
-    File.write('./data/games.json', json.to_json)
+    File.write('./data/games.json', JSON.generate(json, {
+                                                    array_nl: "\n",
+                                                    object_nl: "\n",
+                                                    indent: ' ',
+                                                    space_before: ' ',
+                                                    space: ' '
+                                                  }))
   end
 
   def load_game

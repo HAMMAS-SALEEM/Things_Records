@@ -12,7 +12,13 @@ module AuthorStore
                { first_name: one_author.first_name, last_name: author.last_name }
              end
            end
-    File.write('./data/author.json', json.to_json)
+    File.write('./data/author.json', JSON.generate(json, {
+                                                     array_nl: "\n",
+                                                     object_nl: "\n",
+                                                     indent: ' ',
+                                                     space_before: ' ',
+                                                     space: ' '
+                                                   }))
   end
 
   def load_author

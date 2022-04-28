@@ -15,7 +15,8 @@ class Main
     8  - Add a book
     9  - Add a music album
     10 - Add a game
-    11 - Quit the App
+    11 - Add an author
+    12 - Quit the App
     "
   end
 
@@ -27,8 +28,10 @@ class Main
       list_all_author
     when 10
       add_game
-    when 12
+    when 11
       add_author
+    when 12
+      exit
     end
   end
 end

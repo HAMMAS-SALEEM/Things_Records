@@ -1,6 +1,8 @@
 require_relative '../store_data/game_store'
+require_relative 'app_input'
 module AppGame
   include GameStore
+  include Input
 
   def list_all_games
     games = load_game
@@ -13,13 +15,8 @@ module AppGame
   end
 
   def add_game
-    print('Multiplayer: ')
-    multiplayer = gets.chomp
-    print("last played at (e.g.'2022-02-27'): ")
-    last = gets.chomp
-    print("publish  date (e.g.'2022-02-27') : ")
-    date = gets.chomp
-    write_game(multiplayer, last, date)
+    input = inp(['multiplayer', "last played at (e.g.'2022-02-27')", "publish  date (e.g.'2022-02-27')"])
+    write_game(input[0], input[1], input[2])
     puts('Game created Successfully')
   end
 end
