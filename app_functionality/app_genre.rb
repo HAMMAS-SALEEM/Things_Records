@@ -24,13 +24,13 @@ module AppGenre
      genres = load_data('genre')
     if genres.empty?
       puts 'No Genres have been added yet'
-      print 'enter a Genre name:'
     else
       puts 'Select genre for the list.'
       genres.each_with_index { |genre, index| puts("#{index} Name: #{genre['name']}") }
-      print 'Enter name of genre or Enter a new Genre: '
     end
-    gets.chomp.downcase
+    input = inp(['Enter name of Genre'])
+    genre = input[0]
+    genre
   end
 
 end

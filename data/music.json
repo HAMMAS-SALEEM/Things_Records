@@ -12,5 +12,19 @@
   "name" : "Dilemma",
   "on_spotify" : false,
   "genre" : "rnb"
+ },
+ {
+  "id" : 126,
+  "publish_date" : "1995-10-12",
+  "name" : "kash kash",
+  "on_spotify" : true,
+  "genre" : "Rumba"
+ },
+ {
+  "id" : 582,
+  "publish_date" : "2020-10-10",
+  "name" : "loving you",
+  "on_spotify" : true,
+  "genre" : "Rumba"
  }
 ]

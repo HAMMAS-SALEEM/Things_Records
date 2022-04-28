@@ -8,12 +8,11 @@ module AppMusicAlbum
  def add_music_album
   music_albums = load_data('music')
     puts 'Add a music album'
-    print 'Enter music albums name: '
-    name = gets.chomp
-    print 'Enter albums published date: '
-    publish_date = gets.chomp
-    print 'Is the album on spotify? (y/n)'
-    on_spotify = gets.chomp.downcase == 'y' || false
+    input = inp(['Enter Music Album Name', 
+      'Enter albums published date', 'Is the album on spotify? (y/n)'])
+    name = input[0]
+    publish_date = input[1]
+    on_spotify = input[2] == 'y' || false
     print 'Add genre: '
     genre = genre_input
     album = MusicAlbum.new(publish_date, name, on_spotify, genre)
