@@ -1,18 +1,10 @@
 [
-  {
-    "id" : 8441,
-    "name" : "regea"
-  },
-  {
-    "id" : 9743,
-    "name" : "hiphop"
-  },
-  {
-    "id" : 5566,
-    "name" : "soul"
-  },
-  {
-    "id" : 3544,
-    "name" : "soul"
-  }
+ {
+  "id" : 4742,
+  "name" : "rock"
+ },
+ {
+  "id" : 6033,
+  "name" : "rnb"
+ }
 ]

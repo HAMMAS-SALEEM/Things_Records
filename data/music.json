@@ -1,42 +1,16 @@
 [
-  {
-    "id" : 974,
-    "publish_date" : "2000-10-05",
-    "archived" : false,
-    "name" : "Malawi",
-    "on_spotify" : false,
-    "genre" : "regea"
-  },
-  {
-    "id" : 827,
-    "publish_date" : "2001-01-01",
-    "archived" : false,
-    "name" : "Mesmerize",
-    "on_spotify" : true,
-    "genre" : "hiphop"
-  },
-  {
-    "id" : 709,
-    "publish_date" : "1990",
-    "archived" : false,
-    "name" : "greatest love",
-    "on_spotify" : true,
-    "genre" : "soul"
-  },
-  {
-    "id" : 346,
-    "publish_date" : "1998-02-03",
-    "archived" : false,
-    "name" : "Brok",
-    "on_spotify" : false,
-    "genre" : "soul"
-  },
-  {
-    "id" : 221,
-    "publish_date" : "2020-10-15",
-    "archived" : false,
-    "name" : "Dance",
-    "on_spotify" : false,
-    "genre" : "soul"
-  }
+ {
+  "id" : 473,
+  "publish_date" : "2009-01-01",
+  "name" : "Party Rock",
+  "on_spotify" : false,
+  "genre" : "rock"
+ },
+ {
+  "id" : 837,
+  "publish_date" : "2001-01-01",
+  "name" : "Dilemma",
+  "on_spotify" : false,
+  "genre" : "rnb"
+ }
 ]
