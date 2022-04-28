@@ -7,6 +7,8 @@ class Book < Item
     super(publish_date)
   end
 
+  attr_accessor :publisher, :cover_state
+
   private
 
   def can_be_archived?
