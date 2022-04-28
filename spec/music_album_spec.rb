@@ -2,7 +2,7 @@ require './classes/music_album'
 
 describe MusicAlbum do
   before :all do
-    @album = MusicAlbum.new('2007-04-10', false, 'unbreakable', false, 'pop')
+    @album = MusicAlbum.new('2007-04-10', 'unbreakable', false, 'pop')
   end
 
   context 'it should create a MusicAlbum class instance' do
@@ -11,7 +11,7 @@ describe MusicAlbum do
     end
 
     it 'should check if the publish date is 2007-04-10' do
-      expect(@album.publish_date).to eql '2007-04-10'
+      expect(@album.publish_date.year).to eql 2007
     end
 
     it 'should check if the name is unbreakable' do

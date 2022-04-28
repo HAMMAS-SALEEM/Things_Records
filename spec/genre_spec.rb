@@ -4,7 +4,7 @@ require './classes/item'
 describe Genre do
   context 'it should create a genre instance with name' do
     genre = Genre.new('urban')
-    item = Item.new(10, '2021-06-10', false, 'Hiphop')
+    item = Item.new('2021-06-10')
 
     it 'create new instance of class genre' do
       expect(genre).to be_an_instance_of Genre
