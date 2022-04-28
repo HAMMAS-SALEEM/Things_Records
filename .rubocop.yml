@@ -52,3 +52,6 @@ Style/HashTransformValues:
   Enabled: false
 Layout/EndOfLine:
   Enabled: False
+Metrics/CyclomaticComplexity:
+  Enabled: False
+
