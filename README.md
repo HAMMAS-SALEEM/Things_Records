@@ -6,6 +6,7 @@ This project is made as part of the Microverse curriculum for module 4- Ruby and
 
 ## Link
 
+[Loom Video](https://www.loom.com/share/a3deb19b2b61410f80d2e1164fc7b8a0)
 
 ## Built With
 
