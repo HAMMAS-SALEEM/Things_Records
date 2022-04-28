@@ -18,5 +18,15 @@
   "publisher" : "Faizi",
   "cover_state" : "bad",
   "publish_date" : "2019-01-03"
+ },
+ {
+  "publisher" : "Mc Graw",
+  "cover_state" : "New",
+  "publish_date" : "2017-02-10"
+ },
+ {
+  "publisher" : "Dzuka",
+  "cover_state" : "second hand",
+  "publish_date" : "1998-10-09"
  }
 ]

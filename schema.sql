@@ -1,3 +1,13 @@
+CREATE DATABASE things_records;
+
+CREATE TABLE item (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  publish_date DATE,
+  archived BOOLEAN,
+  genre VARCHAR(50),
+  PRIMARY KEY(id)
+);
+
 -- Member 1 Work
 
 CREATE TABLE LABEL(
@@ -16,6 +26,19 @@ CREATE TABLE BOOKS(
 );
 
 -- Member 2 Work
+CREATE TABLE genre (
+  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(50)
+);
+
+CREATE TABLE music_album (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(100),
+  on_spotify BOOLEAN,
+  PRIMARY KEY(id),
+  CONSTRAINT FK_albumId FOREIGN KEY(id) REFERENCES item(id)
+);
+-- Member 3 Work
 
 CREATE TABLE Author(
     id INT CONSTRAINT ID_Author_PK PRIMARY KEY,
