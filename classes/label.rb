@@ -9,7 +9,7 @@ class Label
   attr_reader :items
 
   def add_item(item)
-    @items.push(item)
+    @items << (item)
     item.label = self
   end
 end
