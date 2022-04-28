@@ -1,0 +1,32 @@
+[
+ {
+  "publisher" : "Hammas",
+  "cover_state" : "Good",
+  "publish_date" : "2020-01-01"
+ },
+ {
+  "publisher" : "Lichapa",
+  "cover_state" : "New",
+  "publish_date" : "2020-05-13"
+ },
+ {
+  "publisher" : "Lichapa",
+  "cover_state" : "New",
+  "publish_date" : "2009-01-13"
+ },
+ {
+  "publisher" : "Faizi",
+  "cover_state" : "bad",
+  "publish_date" : "2019-01-03"
+ },
+ {
+  "publisher" : "Mc Graw",
+  "cover_state" : "New",
+  "publish_date" : "2017-02-10"
+ },
+ {
+  "publisher" : "Dzuka",
+  "cover_state" : "second hand",
+  "publish_date" : "1998-10-09"
+ }
+]
