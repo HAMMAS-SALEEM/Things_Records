@@ -15,13 +15,13 @@ module AppGenre
     genres = load_data('genre')
     puts 'No Genres have been added yet' if genres.empty?
     genres.each_with_index do |genre, i|
-      puts ("#{i + 1}: Genre Name: #{genre['name']}")
+      puts("#{i + 1}: Genre Name: #{genre['name']}")
     end
     puts
   end
 
   def genre_input
-     genres = load_data('genre')
+    genres = load_data('genre')
     if genres.empty?
       puts 'No Genres have been added yet'
     else
@@ -29,8 +29,6 @@ module AppGenre
       genres.each_with_index { |genre, index| puts("#{index} Name: #{genre['name']}") }
     end
     input = inp(['Enter name of Genre'])
-    genre = input[0]
-    genre
+    input[0]
   end
-
 end

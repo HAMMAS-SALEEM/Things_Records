@@ -5,7 +5,6 @@ require './app_functionality/app_label'
 require './app_functionality/app_music_album'
 require './app_functionality/app_genre'
 
-
 class Main
   include AppGame
   include AppAuthor
