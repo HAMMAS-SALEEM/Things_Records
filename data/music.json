@@ -14,5 +14,29 @@
     "name" : "Mesmerize",
     "on_spotify" : true,
     "genre" : "hiphop"
+  },
+  {
+    "id" : 709,
+    "publish_date" : "1990",
+    "archived" : false,
+    "name" : "greatest love",
+    "on_spotify" : true,
+    "genre" : "soul"
+  },
+  {
+    "id" : 346,
+    "publish_date" : "1998-02-03",
+    "archived" : false,
+    "name" : "Brok",
+    "on_spotify" : false,
+    "genre" : "soul"
+  },
+  {
+    "id" : 221,
+    "publish_date" : "2020-10-15",
+    "archived" : false,
+    "name" : "Dance",
+    "on_spotify" : false,
+    "genre" : "soul"
   }
 ]
