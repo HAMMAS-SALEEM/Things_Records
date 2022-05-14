@@ -30,6 +30,7 @@ gem install bundler
 Then run:
 ```
 bundle install
+add other gems
 ```
 run ruby app in the Command Line:
 ```
